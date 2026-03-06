@@ -1,18 +1,23 @@
 {
-  "name": "InnovationLab031726",
-  "image": "salesforce/salesforcedx:latest",
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "salesforce.salesforcedx-vscode",
-        "salesforce.salesforcedx-einstein-gpt",
-        "salesforce.salesforcedx-vscode-apex"
-      ],
-      "settings": {
-        "salesforcedx-vscode-core.telemetry.enabled": true,
-        "salesforce.einstein.codeCompletion.enabled": true
-      }
-    }
-  },
-  "remoteUser": "root"
+    "name": "InnovationLab031726",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "17"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "salesforce.salesforcedx-vscode",
+                "salesforce.salesforcedx-einstein-gpt",
+                "salesforce.salesforcedx-vscode-apex"
+            ],
+            "settings": {
+                "salesforcedx-vscode-core.telemetry.enabled": true,
+                "salesforce.einstein.codeCompletion.enabled": true
+            }
+        }
+    },
+    "postCreateCommand": "npm install -g @salesforce/cli"
 }
