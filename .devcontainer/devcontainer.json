@@ -1,0 +1,18 @@
+{
+  "name": "Agentforce Workshop",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "salesforce.salesforcedx-vscode",
+        "salesforce.salesforcedx-einstein-gpt",
+        "salesforce.salesforcedx-vscode-apex"
+      ],
+      "settings": {
+        "salesforcedx-vscode-core.telemetry.enabled": true,
+        "salesforce.einstein.codeCompletion.enabled": true
+      }
+    }
+  },
+  "postCreateCommand": "sf --version"
+}
