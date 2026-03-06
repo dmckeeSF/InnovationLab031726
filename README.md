@@ -1,47 +1,18 @@
-# 🗽 NYC Partner Innovation Lab: Agentforce Vibes Workshop
+# Salesforce DX Project: Next Steps
 
-Welcome to the **Agentforce Vibes** hands-on session! This repository is your "Zero-Config" workspace, purpose-built to get you coding immediately without the friction of local installations.
+Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
 
-### 🎯 Why are we using this?
-The purpose of this GitHub Codespace is to provide a standardized environment. It bypasses the need to manually configure Java, the Salesforce CLI, or VS Code extensions on your own machine. 
+## How Do You Plan to Deploy Your Changes?
 
----
+Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 
-## 🚀 Quick Start: Launch Your Environment
+## Configure Your Salesforce DX Project
 
-To begin the workshop, click the button below. This will spin up a cloud-hosted VS Code instance with all dependencies pre-installed.
+The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/dmckeeSF/InnovationLab031726)
+## Read All About It
 
-> **Pro Tip:** On your first launch, it may take 1–2 minutes to initialize. Once the editor opens, look for the **Salesforce** and **Agentforce** icons in the activity bar on the left.
-
----
-
-## 🛠️ Workshop Exercise: Building Unit Tests for Agentic Actions
-
-During this lab, we are transitioning from **Agent Studio** to the **IDE** to ensure our agent's actions are robust and production-ready.
-
-**The Goal:** Build a comprehensive Apex Test Class for the **Invokable Apex** class we just built in Agent Studio.
-
-1.  **Authenticate:** Open the terminal in this window and run:
-    `sf org login web`
-2.  **Pull Metadata:** Use the Cloud icon (Salesforce Extension) to retrieve the Invokable Apex class you created in your org.
-3.  **Generate with Vibes:** Open your Apex class, highlight the code, and use **Agentforce Vibes** (Cmd+Shift+I or the "Vibes" icon in the panel) to generate your test.
-    * *Try this prompt:* "Write a unit test for this Invokable method. Include a test case for a single record and a bulk test case with 200 records."
-4.  **Verify & Run:** Save your new test class and run it directly from the editor to see your coverage!
-
----
-
-## 📚 Post-Workshop: Take Vibes Home
-
-To continue using Agentforce Vibes in your own local environment after today, follow these official setup guides:
-
-* **[Agentforce Vibes Local Setup](https://developer.salesforce.com/docs/platform/einstein-for-devs/guide/einstein-setup.html):** Requirements for VS Code and system dependencies.
-* **[Agentforce Quick Start Guide](https://developer.salesforce.com/docs/platform/einstein-for-devs/guide/einstein-quick-start.html):** Get up and running in under 5 minutes.
-* **[Troubleshooting Guide](https://developer.salesforce.com/docs/platform/einstein-for-devs/guide/einstein-troubleshoot.html):** Common fixes for connection or extension issues.
-
----
-
-### 💡 Lab Reminders
-* **Status Check:** If the Agentforce Vibes icon in the bottom status bar is **brown**, it is disabled. Click it to enable.
-* **Telemetry:** Telemetry is **Enabled** in this container to allow the extension to communicate with the Salesforce AI services
+- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
+- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
+- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
+- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
