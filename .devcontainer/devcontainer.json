@@ -1,18 +1,16 @@
 {
     "name": "InnovationLab031726",
-    "image": "mcr.microsoft.com/devcontainers/universal:2",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "salesforce.salesforcedx-vscode",
-                "salesforce.salesforcedx-einstein-gpt",
-                "salesforce.salesforcedx-vscode-apex"
-            ],
-            "settings": {
-                "salesforcedx-vscode-core.telemetry.enabled": true,
-                "salesforce.einstein.codeCompletion.enabled": true
-            }
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+    "features": {
+        "ghcr.io/forcedotcom/cli/salesforce-cli:latest": {},
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "21",
+            "jdkDistro": "ms"
         }
     },
-    "postCreateCommand": "npm install -g @salesforce/cli"
+    "customizations": {
+        "vscode": {
+            "extensions": ["salesforce.salesforcedx-vscode"]
+        }
+    }
 }
