@@ -2,15 +2,22 @@
     "name": "InnovationLab031726",
     "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
     "features": {
-        "ghcr.io/forcedotcom/cli/salesforce-cli:latest": {},
+        // We will remove the Salesforce feature and install it via the command below
         "ghcr.io/devcontainers/features/java:1": {
             "version": "21",
             "jdkDistro": "ms"
         }
     },
+    // This installs the CLI directly via NPM, which bypasses the registry permission error
+    "postCreateCommand": "sudo npm install -g @salesforce/cli",
     "customizations": {
         "vscode": {
-            "extensions": ["salesforce.salesforcedx-vscode"]
+            "extensions": [
+                "salesforce.salesforcedx-vscode"
+            ],
+            "settings": {
+                "salesforcedx-vscode-apex.java.home": "/usr/local/sdkman/candidates/java/current"
+            }
         }
     }
 }
