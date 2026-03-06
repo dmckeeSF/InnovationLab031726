@@ -1,6 +1,13 @@
 {
   "name": "Agentforce Workshop",
   "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17"
+    },
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/pascalgrimaud/devcontainer-features/salesforce-cli:1": {}
+  },
   "customizations": {
     "vscode": {
       "extensions": [
