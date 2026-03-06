@@ -10,9 +10,10 @@
       ],
       "settings": {
         "salesforcedx-vscode-core.telemetry.enabled": true,
-        "salesforce.einstein.codeCompletion.enabled": true
+        "salesforce.einstein.codeCompletion.enabled": true,
+        "salesforce.einstein.aiAddr": "https://api.einstein.ai"
       }
     }
   },
-  "postCreateCommand": "sf --version"
+  "remoteUser": "root"
 }
